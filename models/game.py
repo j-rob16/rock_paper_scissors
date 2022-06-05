@@ -27,3 +27,8 @@ class Game:
                 return self.player_2
             if choice_2 == 'paper':
                 return self.player_1
+
+    # def add_computer_player(self):
+    #     choice = random.choice(['rock', 'paper', 'scissors'])
+    #     computer = Player('Computer', choice)
+    #     return computer

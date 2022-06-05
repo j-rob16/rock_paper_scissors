@@ -2,7 +2,9 @@
 
 {% block content %}
 
-<h3>Winning Player:</h3>
+{% if winner %}
+
+<h1>Winning Player:</h1>
 <h2>
     {{ winner.name }}
 </h2>
@@ -10,8 +12,12 @@
 <h4>
     {{ winner.choice.capitalize() }}
 </h4>
-<p>
 
-</p>
+{% else %}
+
+<h1>It was a draw!</h1>
+<h2>Try again!</h2>
+
+{% endif %}
 
 {% endblock %}

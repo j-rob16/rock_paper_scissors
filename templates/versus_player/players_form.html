@@ -2,48 +2,45 @@
 
 {% block content %}
 <main>
-
-    <section>
+    <header>
         <h1>Players, Get Ready!</h1>
         <h2>Please enter your name and choose a weapon!</h2>
-    </section>
+    </header>
     
     <section>
 
-        <form action="/winner" method="post">
-        
-            <div>
+        <form action="/versus/player" method="post">
+            <section>
                 <h3>Player 1</h3>
-                <label for="p1_name">
+                <label for="nameOne">
                     <span>Name:</span>
-                    <input type="p1_name" id="p1_name">
+                    <input type="text" id="nameOne" name="nameOne" placeholder="Enter Name">
                 </label>
                 <label for="p1_weapon">
-                    <select name="p1_weapon" id="p1_weapon">
+                    <select name="weaponOne" id="p1_weapon">
                         <option value="rock">&#9994;</option>
                         <option value="paper">&#9995;</option>
                         <option value="scissors">&#9996;</option>
                     </select>
                 </label>
-            </div>
-
-            <div>
+            </section>
+            
+            <section>
                 <h3>Player 2</h3>
-                <label for="p2_name">
+                <label for="nameTwo">
                     <span>Name:</span>
-                    <input type="p2_name" id="p2_name">
+                    <input type="text" id="nameTwo" name="nameTwo" placeholder="Enter Name">
                 </label>
-                <label for="p2_weapon">
-                    <select name="p2_weapon" id="p2_weapon">
+                <label for="weaponTwo">
+                    <select name="weaponTwo" id="weaponTwo">
                         <option value="rock">&#9994;</option>
                         <option value="paper">&#9995;</option>
                         <option value="scissors">&#9996;</option>
                     </select>
                 </label>
-            </div>
-
+            </section>
+                <input type="submit" value="Submit">
         </form>
-
 
     </section>
 </main>
