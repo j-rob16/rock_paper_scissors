@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+
+    <section>
+        <h1>Players, Get Ready!</h1>
+        <h2>Please enter your name and choose a weapon!</h2>
+    </section>
+    
+    <section>
+
+        <form action="/winner" method="post">
+        
+            <div>
+                <h3>Player 1</h3>
+                <label for="p1_name">
+                    <span>Name:</span>
+                    <input type="p1_name" id="p1_name">
+                </label>
+                <label for="p1_weapon">
+                    <select name="p1_weapon" id="p1_weapon">
+                        <option value="rock">&#9994;</option>
+                        <option value="paper">&#9995;</option>
+                        <option value="scissors">&#9996;</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <h3>Player 2</h3>
+                <label for="p2_name">
+                    <span>Name:</span>
+                    <input type="p2_name" id="p2_name">
+                </label>
+                <label for="p2_weapon">
+                    <select name="p2_weapon" id="p2_weapon">
+                        <option value="rock">&#9994;</option>
+                        <option value="paper">&#9995;</option>
+                        <option value="scissors">&#9996;</option>
+                    </select>
+                </label>
+            </div>
+
+        </form>
+
+
+    </section>
+</main>
+
+{% endblock %}
